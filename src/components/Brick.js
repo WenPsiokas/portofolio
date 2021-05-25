@@ -6,7 +6,7 @@ import BrickItem from "./BrickItem";
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  padding-left: 100px;
   background-color: #141414;
 `;
 

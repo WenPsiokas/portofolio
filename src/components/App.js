@@ -9,7 +9,7 @@ import Brick from "./Brick";
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div>
       <Helmet>
         <style>{"body { background-color: #000000 }"}</style>
       </Helmet>

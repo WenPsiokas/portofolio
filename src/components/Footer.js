@@ -13,8 +13,11 @@ const Header = () => {
   return (
     <StyledFooter>
       <div>
-        <p>My portofolio was developed with much <AiFillHeart /> using React and Bootstrap! </p>
-        <p>All rights reserved 2021</p>
+        <p>
+          My portofolio was developed with much <AiFillHeart /> using React and
+          Bootstrap! <br />
+          All rights reserved 2021
+        </p>
       </div>
     </StyledFooter>
   );

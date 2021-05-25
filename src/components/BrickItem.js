@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
 `;
 
@@ -18,10 +19,13 @@ const Item = styled.div`
 
 const SectionR = styled.div`
   width: 50%;
+  & img {
+    width: 50%;
+  }
 `;
 
 const SectionL = styled.div`
-  margin-left: -50px;
+  margin-left: -100px;
   width: 50%;
 `;
 
@@ -31,7 +35,7 @@ const BrickItem = () => {
       {data.data.map((item, i) => (
         <Item key={i}>
           <SectionR>
-            <img alt="Avatar" style={{ width: "50%" }} src={item.icon} />
+            <img alt="Avatar" src={item.icon} />
           </SectionR>
           <SectionL>
             <div style={{fontSize: "20px", paddingBottom:"10px"}}>{item.title}</div>
