@@ -7,6 +7,8 @@ import Footer from "../components/Footer";
 import HeroCarousel from "./HeroCarousel";
 import Brick from "./Brick";
 import FiftyFifty from "../containers/FiftyFifty";
+import { ParallaxProvider } from "react-scroll-parallax";
+import Parallaxed from "../containers/Parallaxed";
 
 const App = () => {
   return (
@@ -21,6 +23,9 @@ const App = () => {
         <Route path="/" exact component={HeroCarousel} />
         <Route path="/" exact component={Brick} />
         <Route path="/" exact component={FiftyFifty} />
+        <ParallaxProvider>
+          <Route path="/" exact component={Parallaxed} />
+        </ParallaxProvider>
         <div>
           <Footer />
         </div>
