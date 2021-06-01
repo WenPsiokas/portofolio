@@ -9,18 +9,18 @@ const StyledFooter = styled.div`
   text-align: center;
 `;
 
-const Header = () => {
+const Footer = () => {
   return (
     <StyledFooter>
       <div>
         <p>
           My portofolio was developed with much <AiFillHeart /> using React and
           Bootstrap! <br />
-          All rights reserved 2021
+          All rights reserved {(new Date().getFullYear())}
         </p>
       </div>
     </StyledFooter>
   );
 };
 
-export default Header;
+export default Footer;
