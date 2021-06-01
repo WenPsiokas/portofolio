@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import HeroCarousel from "./HeroCarousel";
 import Brick from "./Brick";
+import FiftyFifty from "../containers/FiftyFifty";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         </div>
         <Route path="/" exact component={HeroCarousel} />
         <Route path="/" exact component={Brick} />
+        <Route path="/" exact component={FiftyFifty} />
         <div>
           <Footer />
         </div>
